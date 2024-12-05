@@ -1,0 +1,54 @@
+body {
+    background-color: #272727;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.field {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    border: solid 1px #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.cell {
+    border: solid 1px #fff;
+    height: 10vw;
+    width: 10vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 7vw;
+}
+
+.nought {
+    color: rgb(51, 133, 255);
+}
+
+.cross {
+    color: rgb(330, 100, 50);
+}
+
+.board {
+    color: #fff;
+    text-align: center;
+}
+
+.score {
+    display: flex; 
+    justify-content: space-around;
+}
+
+.result {
+    text-transform: uppercase;
+}
